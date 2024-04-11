@@ -1,0 +1,74 @@
+body {
+   font-family: monospace;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+.container {
+   max-width: 300px;
+   max-height: fit-content;
+   margin: 100px auto;
+   padding: 20px;
+   border: 2px solid white;
+   border-radius: 10px;
+   box-shadow: 0px 0px 30px wheat;
+   margin-top: 150px;
+}
+
+h1 {
+   margin-bottom: 20px;
+   font-size: 20px;
+   animation: slideIn 1.3s forwards;
+}
+
+@keyframes slideIn {
+   from { transform: translateY(-300%); opacity: 0; }
+   to { transform: translateY(0); opacity: 1; }
+}
+
+input[type="text"], button {
+   padding: 10px;
+   width:fit-content;
+   font-size: 16px;
+   border-radius: 10px;
+   text-align: center;
+   border-width: 2px;
+}
+
+button {
+   padding: 8px 16px;
+   background-color: black;
+   color: white;
+   border: 2px solid white;
+   border-radius: 15px;
+   cursor: pointer;
+   font-size: 12px;
+   margin-right: 10px; 
+   max-width: fit-content;
+   margin: 10px;
+}
+
+button:hover {
+   box-shadow: 0px 0px 30px wheat;
+}
+
+#weatherInfo {
+   margin-top: 20px;
+}
+
+#cityName{
+   font-size: 15px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+#emoji{
+   margin-top: -10px;
+   font-size: 4rem;
+}
+
+p{
+   font-size: 12px;
+}
+
