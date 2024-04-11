@@ -1,8 +1,6 @@
-const API_KEY = require('./config.js');
-
 function getWeather() {
     const city = document.getElementById("cityInput").value;
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=imperial`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e0ebac425e30cb7e26c08e148e1c1b3e&units=imperial`)
     .then(response => response.json())
     .then(data => {
         document.getElementById("cityName").innerText = data.name;
